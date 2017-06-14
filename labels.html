@@ -1,0 +1,430 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Label Guide for GitHub</title>
+</head>
+<style>
+  body {
+    /* Good old GitHub font */
+    font: normal normal 11px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
+  .label {
+    /* Good old GitHub labels */
+    display: inline-block;
+    line-height: 25px;
+    min-width: 90px;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+    box-shadow: inset 0 -1px 0 rgba(27,31,35,0.12);
+    position: relative;
+    transition: opacity 100ms;
+
+    /* Float (collapse) to control margin */
+    float: left;
+    margin-right: 4px;
+  }
+
+  /* Maintain line height */
+  .label sup, th sup {
+    line-height: 1em;
+    font-size: 60%;
+  }
+
+  /* Add a visual hint that this label has a tooltip */
+  .label[data-tip]:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7px 5px 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    opacity: .75;
+  }
+
+  .label[data-tip] {
+    cursor: help;
+  }
+
+  tr:hover .label {
+    opacity: .9;
+  }
+
+  .label:hover {
+    opacity: 1 !important;
+  }
+
+  /* Show tooltip on hover */
+  .label:hover:before {
+    content: attr(data-tip);
+    min-width: 80px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 4px;
+    background-color: #555;
+    color: #fff;
+    line-height: 25px;
+    z-index: 99999;
+    font-weight: normal;
+    padding: 0 10px;
+    font-style: italic;
+    white-space: nowrap;
+    box-shadow: 4px 0px 0px #fff;
+  }
+
+  .problem      { background-color: #ee3f46; color: #fff }
+  .platform     { background-color: #bfd4f2 }
+  .mindless     { background-color: #fef2c0 }
+  .experience   { background-color: #ffc274 }
+  .feedback     { background-color: #cc317c; color: #fff }
+  .inactive     { background-color: #d2dae1 }
+  .change       { background-color: #5ebeff }
+  .semver       { background-color: #91ca55 }
+  .pending      { background-color: #fbca04 }
+  .priority     { background-color: #000000; color: #fff }
+  .status       { background-color: #fad8c7 }
+  .duration     { background-color: #ffffff }
+
+  th[scope=row] {
+    min-width: 100px;
+    text-align: left;
+    font-size: 13px;
+    padding: 0 5px;
+  }
+
+  table.secondary th[scope=row] {
+    font-weight: normal;
+  }
+
+  table.secondary tr th, table.secondary tr td {
+    border-bottom: 1px solid #f4f4f4;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  tfoot td {
+    font-size: 12px;
+    padding-top: 10px;
+    color: #555;
+  }
+</style>
+<body>
+  <h1>Label Guide for GitHub</h1>
+  <a href="https://github.com/vweevers/github-label-preset">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+  </a>
+  <table>
+    <tbody>
+      <tr>
+        <th scope="row">Problem</th>
+        <td>
+          <span class="label problem">bug</span>
+          <span class="label problem">regression</span>
+          <span class="label problem">security</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Experience</th>
+        <td>
+          <span class="label experience" data-tip="add text, improve wording, etc">copy</span>
+          <span class="label experience" data-tip="graphic design and ui design">design</span>
+          <span class="label experience" data-tip="user experience design">ux</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Feedback</th>
+        <td>
+          <span class="label feedback">discussion</span>
+          <span class="label feedback" data-tip="to be answered by assignee">question</span>
+          <span class="label feedback" data-tip="to be discussed IRL or other medium">agenda</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Change</th>
+        <td>
+          <span class="label change" data-tip="change or add feature">enhancement</span>
+          <span class="label change" data-tip="optimize existing feature">optimization</span>
+          <span class="label change" data-tip="scale up/down (vertically) or in/out (horizontally)">scaling</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Semver</th>
+        <td>
+          <span class="label semver" data-tip="target next major release (breaking change)">major</span>
+          <span class="label semver" data-tip="target next minor release (backwards-compatible feature)">minor</span>
+          <span class="label semver" data-tip="target next patch release (bugfix or chore)">patch</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Pending</th>
+        <td>
+          <span class="label pending" data-tip="by other issue, external issue, or pending clarification">blocked</span>
+          <span class="label pending">in progress</span>
+          <span class="label pending" data-tip="any input or initiative is welcome">help wanted</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Priority</th>
+        <td>
+          <span class="label priority" data-tip="blocks other issues or project as a whole (use sparingly)">blocker</span>
+          <span class="label priority" data-tip="time-sensitive, delicate or just very important (use sparingly)">critical</span>
+          <span class="label priority" data-tip="affects product in production">production</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Inactive</th>
+        <td>
+          <span class="label inactive" data-tip="not an issue (anymore)">invalid</span>
+          <span class="label inactive" data-tip="not now, not ever (otherwise, move it to the backlog)">wontfix</span>
+          <span class="label inactive">duplicate</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Platform</th>
+        <td>
+          <span class="label platform" data-tip="backend development">backend</span>
+          <span class="label platform" data-tip="frontend development">frontend</span>
+          <span class="label platform" data-tip="backend infrastructure">infra</span>
+          <span class="label platform" data-tip="logs, business intelligence and monitoring">intelligence</span>
+          <span class="label platform">marketing</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Mindless</th>
+        <td>
+          <span class="label mindless" data-tip="update dependencies, add build scripts, code coverage, configuration, etc">chore</span>
+          <span class="label mindless">docs</span>
+          <span class="label mindless">refactor</span>
+          <span class="label mindless" data-tip="licensing, copyright, terms of conditions, etc">legal</span>
+          <span class="label mindless">translation</span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Status</th>
+        <td>
+          <span class="label status">support</span>
+          <span class="label status" data-tip="needs unit-, smoke- or manual test (use sparingly, prefer TDD)">test</span>
+          <span class="label status" data-tip="pending quality assurance">qa <sup>1</sup></span>
+          <span class="label status" data-tip="pending beta release or deployment">beta <sup>1</sup></span>
+          <span class="label status" data-tip="pending stable release or deployment">release <sup>1</sup></span>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Duration</th>
+        <td>
+          <span class="label duration" data-tip="tiny task">XS</span>
+          <span class="label duration" data-tip="small task">S</span>
+          <span class="label duration" data-tip="medium task">M</span>
+          <span class="label duration" data-tip="large task">L</span>
+          <span class="label duration" data-tip="humongous task (to be broken down in subtasks later)">XL</span>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">
+          <div style="max-width: 550px">
+          1. Alternatively this kind of product flow can be represented on a kanban-style
+          <a href="https://help.github.com/articles/about-project-boards/">Project Board</a>,
+          per repository or organization. This way labels describe issue type or <strong>unforeseen</strong> status,
+          while the horizontal timeline of a project board describes the <strong>mandatory</strong> stages that each issue
+          goes through before public release.
+          </div>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <section style="float: left; margin-right: 10px">
+    <h1>Example combinations</h1>
+    <table class="secondary" >
+      <tbody>
+        <tr>
+          <th scope="row">New feature</th>
+          <td>
+            <span class="label change">enhancement</span>
+            <span class="label semver">minor</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Breaking feature</th>
+          <td>
+            <span class="label change">enhancement</span>
+            <span class="label semver">major</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Feature request</th>
+          <td>
+            <span class="label change">enhancement</span>
+            <span class="label feedback">question</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Not sure if bug</th>
+          <td>
+            <span class="label problem">bug</span>
+            <span class="label feedback">question</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Yeah, that's not a bug</th>
+          <td>
+            <span class="label problem">bug</span>
+            <span class="label inactive">invalid</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Bug that requires refactoring</th>
+          <td>
+            <span class="label problem">bug</span>
+            <span class="label mindless">refactor</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Bug that requires ad-hoc fix</th>
+          <td>
+            <span class="label problem">bug</span>
+            <span class="label priority">critical</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Bug in event order</th>
+          <td>
+            <span class="label problem">bug</span>
+            <span class="label platform">intelligence</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">New event to log</th>
+          <td>
+            <span class="label change">enhancement</span>
+            <span class="label platform">intelligence</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Outsource Redis pending price</th>
+          <td>
+            <span class="label change">scaling</span>
+            <span class="label pending">blocked</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Fix typo in product</th>
+          <td>
+            <span class="label experience">copy</span>
+            <span class="label semver">patch</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Major gap</th>
+          <td>
+            <span class="label priority">blocker</span>
+            <span class="label feedback">discussion</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">New logo to discuss in meeting</th>
+          <td>
+            <span class="label experience">design</span>
+            <span class="label feedback">agenda</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Write Packer template</th>
+          <td>
+            <span class="label platform">infra</span>
+            <span class="label mindless">chore</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Translate campaign message</th>
+          <td>
+            <span class="label platform">marketing</span>
+            <span class="label mindless">translation</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h1>Illegal combinations</h1>
+    <table class="secondary">
+      <tbody>
+        <tr>
+          <th scope="row">Feature as patch</th>
+          <td>
+            <span class="label change">enhancement</span>
+            <span class="label semver">patch</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Status unclear</th>
+          <td>
+            <span class="label pending">blocked</span>
+            <span class="label priority">blocker</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Design does not mean system design <sup>1</sup></th>
+          <td>
+            <span class="label platform">backend</span>
+            <span class="label experience">design</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Nor is scaling about image size</th>
+          <td>
+            <span class="label change">scaling</span>
+            <span class="label experience">design</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Or marketing a production priority</th>
+          <td>
+            <span class="label platform">marketing</span>
+            <span class="label priority">production</span>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">Or major about importance <sup>2</sup></th>
+          <td>
+            <span class="label problem">bug</span>
+            <span class="label semver">major</span>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">
+            <div style="max-width: 450px">
+            1. Instead use labels like <i>discussion</i> (if an open question) or <i>docs</i>
+            (if for a Product Requirements Document).
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div style="max-width: 450px">
+            2. To avoid this ambiguity, some prefer labels like <i>semver-major</i>.
+            But longer labels mean more visual clutter; I prefer short labels
+            accompanied by a clear set of guidelines.
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+</body>
+</html>
