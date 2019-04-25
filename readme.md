@@ -7,28 +7,21 @@
 
 ## Apply to your repository
 
-1) Install [github-label-sync](https://github.com/Financial-Times/github-label-sync) (>= 1.2.1) with [npm](https://npmjs.org):
+1\) Install [github-label-sync](https://github.com/Financial-Times/github-label-sync) (>= 1.3.0) globally with [npm](https://npmjs.org):
 
 ```
 npm i -g github-label-sync
 ```
 
-2) Clone:
+2\) Create a [personal access token](https://github.com/settings/tokens) with the `repo` scope.
+
+3\) Apply the labels to your repo:
 
 ```
-git clone git@github.com:vweevers/github-label-preset.git
-cd github-label-preset
+github-label-sync -a <TOKEN> -l https://raw.githubusercontent.com/vweevers/github-label-preset/master/labels.json [--dry-run] <ORG/REPO>
 ```
 
-3) Create a [personal access token](https://github.com/settings/tokens) with the `repo` scope.
-
-4) Apply the labels to your repo:
-
-```
-github-label-sync -a <TOKEN> -l labels.js [--dry-run] <ORG/REPO>
-```
-
-**Warning! This utility can remove existing labels. Please be careful and always do a `--dry-run` first.** If you don't want to delete existing labels, add `--allow-added-labels`.
+**Warning! This utility can remove existing labels. Be careful and do a `--dry-run` first.** If you don't want to delete existing labels, add `--allow-added-labels`.
 
 ## Wishlist
 
