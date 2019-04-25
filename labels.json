@@ -1,0 +1,143 @@
+[
+  {
+    "name": "bug",
+    "aliases": [],
+    "color": "d73a4a"
+  },
+  {
+    "name": "security",
+    "aliases": [],
+    "color": "d73a4a"
+  },
+  {
+    "name": "discussion",
+    "aliases": [],
+    "color": "50e09a"
+  },
+  {
+    "name": "poll",
+    "aliases": [],
+    "color": "5319e7"
+  },
+  {
+    "name": "question",
+    "aliases": [],
+    "color": "cc317c"
+  },
+  {
+    "name": "enhancement",
+    "aliases": [],
+    "color": "a2eeef"
+  },
+  {
+    "name": "test",
+    "aliases": [],
+    "color": "a2eeef"
+  },
+  {
+    "name": "benchmark",
+    "aliases": [],
+    "color": "a2eeef"
+  },
+  {
+    "name": "semver-major",
+    "aliases": [
+      "semver:major"
+    ],
+    "color": "ffbc42"
+  },
+  {
+    "name": "semver-minor",
+    "aliases": [
+      "semver:minor"
+    ],
+    "color": "ffbc42"
+  },
+  {
+    "name": "semver-patch",
+    "aliases": [
+      "semver:patch"
+    ],
+    "color": "ffbc42"
+  },
+  {
+    "name": "good first issue",
+    "aliases": [],
+    "color": "7057ff"
+  },
+  {
+    "name": "help wanted",
+    "aliases": [],
+    "color": "7057ff"
+  },
+  {
+    "name": "more information needed",
+    "aliases": [],
+    "color": "c7bdff"
+  },
+  {
+    "name": "maintenance",
+    "aliases": [],
+    "color": "006b75"
+  },
+  {
+    "name": "greenkeeper",
+    "aliases": [],
+    "color": "006b75"
+  },
+  {
+    "name": "refactor",
+    "aliases": [],
+    "color": "f08cb9"
+  },
+  {
+    "name": "cleanup",
+    "aliases": [],
+    "color": "f08cb9"
+  },
+  {
+    "name": "documentation",
+    "aliases": [
+      "doc",
+      "docs"
+    ],
+    "color": "0052cc"
+  },
+  {
+    "name": "upgrade guide",
+    "aliases": [
+      "upgrading.md"
+    ],
+    "color": "0052cc"
+  },
+  {
+    "name": "critical",
+    "aliases": [],
+    "color": "292f36"
+  },
+  {
+    "name": "blocked",
+    "aliases": [],
+    "color": "292f36"
+  },
+  {
+    "name": "invalid",
+    "aliases": [],
+    "color": "efefef"
+  },
+  {
+    "name": "duplicate",
+    "aliases": [],
+    "color": "efefef"
+  },
+  {
+    "name": "stale",
+    "aliases": [],
+    "color": "efefef"
+  },
+  {
+    "name": "wontfix",
+    "aliases": [],
+    "color": "efefef"
+  }
+]

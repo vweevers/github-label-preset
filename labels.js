@@ -4,107 +4,94 @@ module.exports = []
 
 const groups = {
   problem: {
-    color: 'ee3f46', // Original GH color: ee0701
+    color: 'd73a4a',
     labels: [
       { name: 'bug', aliases: [] },
-      { name: 'security', aliases: [] },
-      { name: 'regression', aliases: [] }
+      { name: 'security', aliases: [] }
     ]
   },
-  experience: {
-    color: 'ffc274',
+  discussion: {
+    color: '50e09a',
     labels: [
-      { name: 'copy', aliases: [] },
-      { name: 'design', aliases: [] },
-      { name: 'ux', aliases: [] }
+      { name: 'discussion', aliases: [] }
     ]
   },
-  feedback: {
+  poll: {
+    color: '5319e7',
+    labels: [
+      { name: 'poll', aliases: [] }
+    ]
+  },
+  question: {
     color: 'cc317c',
     labels: [
-      { name: 'discussion', aliases: ['rfc'] },
-      { name: 'question', aliases: [] },
-      { name: 'agenda', aliases: [] }
+      { name: 'question', aliases: [] }
     ]
   },
-  change: {
-    color: '5ebeff',
+  add: {
+    color: 'a2eeef',
     labels: [
       { name: 'enhancement', aliases: [] },
-      { name: 'optimization', aliases: [] },
-      { name: 'scaling', aliases: [] }
+      { name: 'test', aliases: [] },
+      { name: 'benchmark', aliases: [] }
     ]
   },
   semver: {
-    color: '91ca55',
+    color: 'ffbc42',
     labels: [
-      { name: 'major', aliases: ['breaking', 'semver-major', 'semver:major', 'semver major'] },
-      { name: 'minor', aliases: ['semver-minor', 'semver:minor', 'semver minor'] },
-      { name: 'patch', aliases: ['semver-patch', 'semver:patch', 'semver patch'] }
+      { name: 'semver-major', aliases: ['semver:major'] },
+      { name: 'semver-minor', aliases: ['semver:minor'] },
+      { name: 'semver-patch', aliases: ['semver:patch'] }
     ]
   },
-  pending: {
-    color: 'fbca04',
+  help_wanted: {
+    color: '7057ff',
     labels: [
-      { name: 'blocked', aliases: [] },
-      { name: 'in progress', aliases: ['progress', 'in-progress'] },
-      { name: 'help wanted', aliases: ['help'] }
+      { name: 'good first issue', aliases: [] },
+      { name: 'help wanted', aliases: [] }
+    ]
+  },
+  info_needed: {
+    color: 'c7bdff',
+    labels: [
+      { name: 'more information needed', aliases: [] }
+    ]
+  },
+  maintenance: {
+    color: '006b75',
+    labels: [
+      { name: 'maintenance', aliases: [] },
+      { name: 'greenkeeper', aliases: [] }
+    ]
+  },
+  cleanup: {
+    color: 'f08cb9',
+    labels: [
+      { name: 'refactor', aliases: [] },
+      { name: 'cleanup', aliases: [] }
+    ]
+  },
+  documentation: {
+    color: '0052cc',
+    labels: [
+      { name: 'documentation', aliases: ['doc', 'docs'] },
+      { name: 'upgrade guide', aliases: ['upgrading.md'] }
     ]
   },
   priority: {
-    color: '000000',
+    color: '292f36',
     labels: [
-      { name: 'blocker', aliases: [] },
-      { name: 'critical', aliases: ['priority', 'important'] },
-      { name: 'production', aliases: ['prod', 'in-production', 'in production'] }
+      { name: 'critical', aliases: [] },
+      { name: 'blocked', aliases: [] }
     ]
   },
   inactive: {
-    color: 'd2dae1',
+    color: 'efefef',
     labels: [
       { name: 'invalid', aliases: [] },
-      { name: 'wontfix', aliases: ['wont-fix', 'wont fix'] },
-      { name: 'duplicate', aliases: [] }
-    ]
-  },
-  platform: {
-    color: 'bfd4f2',
-    labels: [
-      { name: 'backend', aliases: [] },
-      { name: 'frontend', aliases: [] },
-      { name: 'infra', aliases: ['infrastructure'] },
-      { name: 'intelligence', aliases: ['logs', 'analytics', 'bi', 'monitoring'] },
-      { name: 'marketing', aliases: [] }
-    ]
-  },
-  mindless: {
-    color: 'fef2c0',
-    labels: [
-      { name: 'chore', aliases: ['mindless'] },
-      { name: 'docs', aliases: ['doc', 'documentation', 'prd'] },
-      { name: 'refactor', aliases: ['refactoring'] },
-      { name: 'legal', aliases: [] },
-      { name: 'translation', aliases: ['l18n', 'translate'] }
-    ]
-  },
-  stage: {
-    color: 'fad8c7',
-    labels: [
-      { name: 'support', aliases: [] },
-      { name: 'test', aliases: [] },
-      { name: 'qa', aliases: ['waiting for qa', 'waiting on qa', 'ready for qa'] },
-      { name: 'beta', aliases: ['upload to beta'] },
-      { name: 'release', aliases: ['deployment'] }
-    ]
-  },
-  duration: {
-    color: 'ffffff',
-    labels: [
-      { name: 'XS', aliases: [] },
-      { name: 'S', aliases: [] },
-      { name: 'M', aliases: [] },
-      { name: 'L', aliases: [] },
-      { name: 'XL', aliases: [] }
+      { name: 'duplicate', aliases: [] },
+      { name: 'stale', aliases: [] },
+      { name: 'wontfix', aliases: [] }
     ]
   }
 }
