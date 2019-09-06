@@ -1,0 +1,20 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="200" height="32">
+    <clipPath id="a">
+      <rect width="200" height="32" rx="6" fill="#fff"/>
+    </clipPath>
+    <g clip-path="url(#a)">
+      <path fill="#ffbc42" d="M0 0h200v32H0z"/>
+    </g>
+    <g
+      fill="#000"
+      font-family="Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif"
+      font-size="16"
+      font-weight="600"
+      text-anchor="middle"
+      >
+      <text x="100" y="21">semver-patch</text>
+    </g>
+  </svg>

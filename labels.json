@@ -2,98 +2,116 @@
   {
     "name": "bug",
     "aliases": [],
-    "color": "d73a4a"
+    "color": "d73a4a",
+    "invert": true
   },
   {
     "name": "security",
     "aliases": [],
-    "color": "d73a4a"
+    "color": "d73a4a",
+    "invert": true
   },
   {
     "name": "discussion",
     "aliases": [],
-    "color": "50e09a"
+    "color": "50e09a",
+    "invert": false
   },
   {
     "name": "poll",
     "aliases": [],
-    "color": "5319e7"
+    "color": "5319e7",
+    "invert": true
   },
   {
     "name": "question",
     "aliases": [],
-    "color": "cc317c"
+    "color": "cc317c",
+    "invert": true
   },
   {
     "name": "enhancement",
     "aliases": [],
-    "color": "a2eeef"
+    "color": "a2eeef",
+    "invert": false
   },
   {
     "name": "test",
     "aliases": [],
-    "color": "a2eeef"
+    "color": "a2eeef",
+    "invert": false
   },
   {
     "name": "benchmark",
     "aliases": [],
-    "color": "a2eeef"
+    "color": "a2eeef",
+    "invert": false
   },
   {
     "name": "semver-major",
     "aliases": [
       "semver:major"
     ],
-    "color": "ffbc42"
+    "color": "ffbc42",
+    "invert": false
   },
   {
     "name": "semver-minor",
     "aliases": [
       "semver:minor"
     ],
-    "color": "ffbc42"
+    "color": "ffbc42",
+    "invert": false
   },
   {
     "name": "semver-patch",
     "aliases": [
       "semver:patch"
     ],
-    "color": "ffbc42"
+    "color": "ffbc42",
+    "invert": false
   },
   {
     "name": "good first issue",
     "aliases": [],
-    "color": "7057ff"
+    "color": "7057ff",
+    "invert": true
   },
   {
     "name": "help wanted",
     "aliases": [],
-    "color": "7057ff"
+    "color": "7057ff",
+    "invert": true
   },
   {
     "name": "more information needed",
     "aliases": [],
-    "color": "c7bdff"
+    "color": "c7bdff",
+    "invert": false
   },
   {
     "name": "maintenance",
     "aliases": [],
-    "color": "006b75"
+    "color": "006b75",
+    "invert": true
   },
   {
     "name": "greenkeeper",
     "aliases": [],
-    "color": "006b75"
+    "color": "006b75",
+    "invert": true
   },
   {
     "name": "refactor",
     "aliases": [],
-    "color": "f08cb9"
+    "color": "f08cb9",
+    "invert": false
   },
   {
     "name": "cleanup",
     "aliases": [],
-    "color": "f08cb9"
+    "color": "f08cb9",
+    "invert": false
   },
   {
     "name": "documentation",
@@ -101,43 +119,57 @@
       "doc",
       "docs"
     ],
-    "color": "0052cc"
+    "color": "0052cc",
+    "invert": true
   },
   {
     "name": "upgrade guide",
     "aliases": [
       "upgrading.md"
     ],
-    "color": "0052cc"
+    "color": "0052cc",
+    "invert": true
   },
   {
     "name": "critical",
     "aliases": [],
-    "color": "292f36"
+    "color": "292f36",
+    "invert": true
   },
   {
     "name": "blocked",
     "aliases": [],
-    "color": "292f36"
+    "color": "292f36",
+    "invert": true
   },
   {
     "name": "invalid",
     "aliases": [],
-    "color": "efefef"
+    "color": "efefef",
+    "invert": false
   },
   {
     "name": "duplicate",
     "aliases": [],
-    "color": "efefef"
+    "color": "efefef",
+    "invert": false
   },
   {
     "name": "stale",
     "aliases": [],
-    "color": "efefef"
+    "color": "efefef",
+    "invert": false
   },
   {
     "name": "wontfix",
     "aliases": [],
-    "color": "efefef"
+    "color": "efefef",
+    "invert": false
+  },
+  {
+    "name": "false positive",
+    "aliases": [],
+    "color": "efefef",
+    "invert": false
   }
 ]

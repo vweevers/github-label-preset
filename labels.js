@@ -1,10 +1,9 @@
 'use strict'
 
-module.exports = []
-
 const groups = {
   problem: {
     color: 'd73a4a',
+    invert: true,
     labels: [
       { name: 'bug', aliases: [] },
       { name: 'security', aliases: [] }
@@ -18,12 +17,14 @@ const groups = {
   },
   poll: {
     color: '5319e7',
+    invert: true,
     labels: [
       { name: 'poll', aliases: [] }
     ]
   },
   question: {
     color: 'cc317c',
+    invert: true,
     labels: [
       { name: 'question', aliases: [] }
     ]
@@ -46,6 +47,7 @@ const groups = {
   },
   help_wanted: {
     color: '7057ff',
+    invert: true,
     labels: [
       { name: 'good first issue', aliases: [] },
       { name: 'help wanted', aliases: [] }
@@ -59,6 +61,7 @@ const groups = {
   },
   maintenance: {
     color: '006b75',
+    invert: true,
     labels: [
       { name: 'maintenance', aliases: [] },
       { name: 'greenkeeper', aliases: [] }
@@ -73,6 +76,7 @@ const groups = {
   },
   documentation: {
     color: '0052cc',
+    invert: true,
     labels: [
       { name: 'documentation', aliases: ['doc', 'docs'] },
       { name: 'upgrade guide', aliases: ['upgrading.md'] }
@@ -80,6 +84,7 @@ const groups = {
   },
   priority: {
     color: '292f36',
+    invert: true,
     labels: [
       { name: 'critical', aliases: [] },
       { name: 'blocked', aliases: [] }
@@ -97,11 +102,16 @@ const groups = {
   }
 }
 
-for(let k in groups) {
+module.exports = []
+module.exports.groups = groups
+
+for(const k in groups) {
   const group = groups[k]
 
-  group.labels.forEach(label => {
+  for (const label of group.labels) {
     label.color = group.color
+    label.invert = !!group.invert
+
     module.exports.push(label)
-  })
+  }
 }
