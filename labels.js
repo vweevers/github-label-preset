@@ -91,7 +91,8 @@ const groups = {
       { name: 'invalid', aliases: [] },
       { name: 'duplicate', aliases: [] },
       { name: 'stale', aliases: [] },
-      { name: 'wontfix', aliases: [] }
+      { name: 'wontfix', aliases: [] },
+      { name: 'false positive', aliases: [] }
     ]
   }
 }
