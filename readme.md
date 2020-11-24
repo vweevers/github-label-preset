@@ -2,6 +2,11 @@
 
 **Preset for GitHub labels.**  
 
+[![npm status](http://img.shields.io/npm/v/github-label-preset.svg)](https://www.npmjs.org/package/github-label-preset)
+[![node](https://img.shields.io/node/v/github-label-preset.svg)](https://www.npmjs.org/package/github-label-preset)
+![Test](https://github.com/vweevers/github-label-preset/workflows/Test/badge.svg?branch=master)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 ## Labels
 
 ![problem-bug](svg/problem-bug.svg) ![problem-security](svg/problem-security.svg)
