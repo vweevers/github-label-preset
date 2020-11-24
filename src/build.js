@@ -9,21 +9,21 @@ const tpl = function (text, bgColor, fgColor) {
   return `<svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="200" height="32">
+    width="160" height="22">
     <clipPath id="a">
-      <rect width="200" height="32" rx="6" fill="#fff"/>
+      <rect width="160" height="22" rx="10" fill="#fff"/>
     </clipPath>
     <g clip-path="url(#a)">
-      <path fill="#${bgColor}" d="M0 0h200v32H0z"/>
+      <path fill="#${bgColor}" d="M0 0h160v22H0z"/>
     </g>
     <g
       fill="#${fgColor}"
       font-family="Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif"
-      font-size="16"
-      font-weight="600"
+      font-size="12"
+      font-weight="400"
       text-anchor="middle"
       >
-      <text x="100" y="21">${text}</text>
+      <text x="80" y="14">${text}</text>
     </g>
   </svg>`
 }
@@ -31,14 +31,21 @@ const tpl = function (text, bgColor, fgColor) {
 for (const k in labels.groups) {
   const group = labels.groups[k]
 
+  let n = 0
   for (const label of group.labels) {
     const svg = tpl(label.name, label.color, label.invert ? 'fff' : '000')
     const id = k.replace(/_/g, '-') + '-' + label.name.replace(/ /g, '-')
     const fp = `svg/${id}.svg`
 
     fs.writeFileSync(fp, svg)
-    console.log(`![${id}](${fp})`)
+
+    if (n++ >= 3) {
+      console.log('\n')
+      n = 0
+    }
+
+    process.stdout.write(`![${id}](${fp}) `)
   }
 
-  console.log()
+  console.log('\n')
 }

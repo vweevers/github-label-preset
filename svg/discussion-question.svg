@@ -1,20 +1,20 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="200" height="32">
+    width="160" height="22">
     <clipPath id="a">
-      <rect width="200" height="32" rx="6" fill="#fff"/>
+      <rect width="160" height="22" rx="10" fill="#fff"/>
     </clipPath>
     <g clip-path="url(#a)">
-      <path fill="#006b75" d="M0 0h200v32H0z"/>
+      <path fill="#5319e7" d="M0 0h160v22H0z"/>
     </g>
     <g
       fill="#fff"
       font-family="Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif"
-      font-size="16"
-      font-weight="600"
+      font-size="12"
+      font-weight="400"
       text-anchor="middle"
       >
-      <text x="100" y="21">greenkeeper</text>
+      <text x="80" y="14">question</text>
     </g>
   </svg>

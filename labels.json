@@ -1,58 +1,82 @@
 [
   {
     "name": "bug",
-    "aliases": [],
+    "aliases": [
+      "type: bug"
+    ],
+    "description": "Something isn't working",
     "color": "d73a4a",
     "invert": true
   },
   {
     "name": "security",
     "aliases": [],
+    "description": "Vulnerabilities and other security-related matters",
     "color": "d73a4a",
     "invert": true
   },
   {
-    "name": "discussion",
-    "aliases": [],
-    "color": "50e09a",
-    "invert": false
-  },
-  {
-    "name": "poll",
-    "aliases": [],
+    "name": "question",
+    "aliases": [
+      "type: question"
+    ],
+    "description": "Support or open question(s)",
     "color": "5319e7",
     "invert": true
   },
   {
-    "name": "question",
-    "aliases": [],
-    "color": "cc317c",
+    "name": "discussion",
+    "aliases": [
+      "type: discussion"
+    ],
+    "description": "Discussion",
+    "color": "5319e7",
+    "invert": true
+  },
+  {
+    "name": "poll",
+    "aliases": [
+      "type: poll"
+    ],
+    "description": "Poll",
+    "color": "5319e7",
     "invert": true
   },
   {
     "name": "enhancement",
-    "aliases": [],
-    "color": "a2eeef",
+    "aliases": [
+      "type: enhancement",
+      "feature"
+    ],
+    "description": "New feature or request",
+    "color": "84d3f6",
     "invert": false
   },
   {
     "name": "test",
-    "aliases": [],
-    "color": "a2eeef",
+    "aliases": [
+      "type: test"
+    ],
+    "description": "Improvements or additions to tests",
+    "color": "84d3f6",
     "invert": false
   },
   {
     "name": "benchmark",
     "aliases": [],
-    "color": "a2eeef",
+    "description": "Requires or pertains to benchmarking",
+    "color": "84d3f6",
     "invert": false
   },
   {
     "name": "semver-major",
     "aliases": [
-      "semver:major"
+      "semver:major",
+      "type: breaking",
+      "breaking"
     ],
-    "color": "ffbc42",
+    "description": "Changes that break backward compatibility",
+    "color": "ffc762",
     "invert": false
   },
   {
@@ -60,7 +84,8 @@
     "aliases": [
       "semver:minor"
     ],
-    "color": "ffbc42",
+    "description": "New features that are backward compatible",
+    "color": "ffc762",
     "invert": false
   },
   {
@@ -68,58 +93,45 @@
     "aliases": [
       "semver:patch"
     ],
-    "color": "ffbc42",
+    "description": "Bug fixes that are backward compatible",
+    "color": "ffc762",
     "invert": false
   },
   {
     "name": "good first issue",
-    "aliases": [],
-    "color": "7057ff",
+    "aliases": [
+      "status: good starter issue",
+      "good-starter-issue"
+    ],
+    "description": "Good for newcomers",
+    "color": "8e57e4",
     "invert": true
   },
   {
     "name": "help wanted",
-    "aliases": [],
-    "color": "7057ff",
+    "aliases": [
+      "status: help wanted"
+    ],
+    "description": "Extra attention is needed",
+    "color": "8e57e4",
     "invert": true
   },
   {
     "name": "more information needed",
     "aliases": [],
-    "color": "c7bdff",
-    "invert": false
-  },
-  {
-    "name": "maintenance",
-    "aliases": [],
-    "color": "006b75",
+    "description": "Further information is requested",
+    "color": "8e57e4",
     "invert": true
-  },
-  {
-    "name": "greenkeeper",
-    "aliases": [],
-    "color": "006b75",
-    "invert": true
-  },
-  {
-    "name": "refactor",
-    "aliases": [],
-    "color": "f08cb9",
-    "invert": false
-  },
-  {
-    "name": "cleanup",
-    "aliases": [],
-    "color": "f08cb9",
-    "invert": false
   },
   {
     "name": "documentation",
     "aliases": [
+      "type: documentation",
       "doc",
       "docs"
     ],
-    "color": "0052cc",
+    "description": "Improvements or additions to documentation",
+    "color": "0e8a16",
     "invert": true
   },
   {
@@ -127,48 +139,107 @@
     "aliases": [
       "upgrading.md"
     ],
-    "color": "0052cc",
+    "description": "Improvements or additions to upgrade guide(s)",
+    "color": "0e8a16",
     "invert": true
+  },
+  {
+    "name": "changelog",
+    "aliases": [
+      "changelog.md"
+    ],
+    "description": "Improvements or additions to changelog",
+    "color": "0e8a16",
+    "invert": true
+  },
+  {
+    "name": "maintenance",
+    "aliases": [
+      "type: maintenance"
+    ],
+    "description": "General maintenance",
+    "color": "1d76db",
+    "invert": true
+  },
+  {
+    "name": "dependencies",
+    "aliases": [
+      "dependabot",
+      "greenkeeper"
+    ],
+    "description": "Pull requests that update a dependency file",
+    "color": "1d76db",
+    "invert": true
+  },
+  {
+    "name": "refactor",
+    "aliases": [],
+    "description": "Requires or pertains to refactoring",
+    "color": "f6b9d4",
+    "invert": false
+  },
+  {
+    "name": "cleanup",
+    "aliases": [],
+    "description": "Housekeeping",
+    "color": "f6b9d4",
+    "invert": false
   },
   {
     "name": "critical",
     "aliases": [],
+    "description": "Urgent matter(s)",
     "color": "292f36",
     "invert": true
   },
   {
     "name": "blocked",
-    "aliases": [],
+    "aliases": [
+      "status: blocked"
+    ],
+    "description": "Unable to proceed with this issue or pull request",
     "color": "292f36",
     "invert": true
   },
   {
     "name": "invalid",
     "aliases": [],
+    "description": "This doesn't seem right",
     "color": "efefef",
     "invert": false
   },
   {
     "name": "duplicate",
-    "aliases": [],
+    "aliases": [
+      "status: duplicate"
+    ],
+    "description": "This issue or pull request already exists",
     "color": "efefef",
     "invert": false
   },
   {
     "name": "stale",
-    "aliases": [],
+    "aliases": [
+      "status: stale"
+    ],
+    "description": "This issue or pull request is old",
     "color": "efefef",
     "invert": false
   },
   {
     "name": "wontfix",
-    "aliases": [],
+    "aliases": [
+      "status: wontfix",
+      "wont-fix"
+    ],
+    "description": "This will not be worked on",
     "color": "efefef",
     "invert": false
   },
   {
     "name": "false positive",
     "aliases": [],
+    "description": "Not an issue",
     "color": "efefef",
     "invert": false
   }

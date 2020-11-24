@@ -1,0 +1,29 @@
+{
+  "name": "github-label-preset",
+  "version": "0.0.0",
+  "description": "Preset for GitHub labels",
+  "license": "MIT",
+  "author": "Vincent Weevers",
+  "scripts": {
+    "test": "standard && node test.js",
+    "build": "node src/build.js"
+  },
+  "files": [
+    "index.js",
+    "labels.json",
+    "svg"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "tape": "^5.0.1"
+  },
+  "keywords": [
+    "github",
+    "labels",
+    "preset"
+  ],
+  "engines": {
+    "node": ">=10"
+  }
+}

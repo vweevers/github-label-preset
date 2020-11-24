@@ -1,51 +1,36 @@
 # github-label-preset
 
-> **A preset for GitHub labels.**  
-> Not perfect; driven by necessity.
+**Preset for GitHub labels.**  
 
 ## Labels
 
-![problem-bug](svg/problem-bug.svg)
-![problem-security](svg/problem-security.svg)
+![problem-bug](svg/problem-bug.svg) ![problem-security](svg/problem-security.svg)
 
-![discussion-discussion](svg/discussion-discussion.svg)
+![discussion-question](svg/discussion-question.svg) ![discussion-discussion](svg/discussion-discussion.svg) ![discussion-poll](svg/discussion-poll.svg)
 
-![poll-poll](svg/poll-poll.svg)
+![add-enhancement](svg/add-enhancement.svg) ![add-test](svg/add-test.svg) ![add-benchmark](svg/add-benchmark.svg)
 
-![question-question](svg/question-question.svg)
+![semver-semver-major](svg/semver-semver-major.svg) ![semver-semver-minor](svg/semver-semver-minor.svg) ![semver-semver-patch](svg/semver-semver-patch.svg)
 
-![add-enhancement](svg/add-enhancement.svg)
-![add-test](svg/add-test.svg)
-![add-benchmark](svg/add-benchmark.svg)
+![help-wanted-good-first-issue](svg/help-wanted-good-first-issue.svg) ![help-wanted-help-wanted](svg/help-wanted-help-wanted.svg) ![help-wanted-more-information-needed](svg/help-wanted-more-information-needed.svg)
 
-![semver-semver-major](svg/semver-semver-major.svg)
-![semver-semver-minor](svg/semver-semver-minor.svg)
-![semver-semver-patch](svg/semver-semver-patch.svg)
+![documentation-documentation](svg/documentation-documentation.svg) ![documentation-upgrade-guide](svg/documentation-upgrade-guide.svg) ![documentation-changelog](svg/documentation-changelog.svg)
 
-![help-wanted-good-first-issue](svg/help-wanted-good-first-issue.svg)
-![help-wanted-help-wanted](svg/help-wanted-help-wanted.svg)
+![maintenance-maintenance](svg/maintenance-maintenance.svg) ![maintenance-dependencies](svg/maintenance-dependencies.svg)
 
-![info-needed-more-information-needed](svg/info-needed-more-information-needed.svg)
+![cleanup-refactor](svg/cleanup-refactor.svg) ![cleanup-cleanup](svg/cleanup-cleanup.svg)
 
-![maintenance-maintenance](svg/maintenance-maintenance.svg)
-![maintenance-greenkeeper](svg/maintenance-greenkeeper.svg)
+![priority-critical](svg/priority-critical.svg) ![priority-blocked](svg/priority-blocked.svg)
 
-![cleanup-refactor](svg/cleanup-refactor.svg)
-![cleanup-cleanup](svg/cleanup-cleanup.svg)
+![inactive-invalid](svg/inactive-invalid.svg) ![inactive-duplicate](svg/inactive-duplicate.svg) ![inactive-stale](svg/inactive-stale.svg)
 
-![documentation-documentation](svg/documentation-documentation.svg)
-![documentation-upgrade-guide](svg/documentation-upgrade-guide.svg)
+![inactive-wontfix](svg/inactive-wontfix.svg) ![inactive-false-positive](svg/inactive-false-positive.svg)
 
-![priority-critical](svg/priority-critical.svg)
-![priority-blocked](svg/priority-blocked.svg)
+## How to use
 
-![inactive-invalid](svg/inactive-invalid.svg)
-![inactive-duplicate](svg/inactive-duplicate.svg)
-![inactive-stale](svg/inactive-stale.svg)
-![inactive-wontfix](svg/inactive-wontfix.svg)
-![inactive-false-positive](svg/inactive-false-positive.svg)
+Apply the preset to many repositories at once with [`attend`](https://github.com/vweevers/attend) (alpha) or to a single repository with `github-label-sync`.
 
-## Apply to your repository
+### With `github-label-sync`
 
 1\) Install [github-label-sync](https://github.com/Financial-Times/github-label-sync) (>= 1.3.0) globally with [npm](https://npmjs.org):
 
@@ -63,14 +48,6 @@ github-label-sync -a <TOKEN> -l https://raw.githubusercontent.com/vweevers/githu
 
 **Warning! This utility can remove existing labels. Be careful and do a `--dry-run` first.** If you don't want to delete existing labels, add `--allow-added-labels`.
 
-## Wishlist
-
-- Add npm-installable presets to `github-label-sync`: `-l <module>`
-- Perhaps publish presets to an npm scope, something like `@gh-labels`
-- Support multiple presets: `-l @gh-labels/semver -l @gh-labels/platform`
-- Require `--force` flag for destructive operations
-- Exclude certain labels from deletion
-
 ## License
 
-[MIT](LICENSE) © 2017-present Vincent Weevers
+[MIT](LICENSE) © Vincent Weevers
