@@ -57,4 +57,4 @@ github-label-sync -a <TOKEN> -l https://raw.githubusercontent.com/vweevers/githu
 
 ## License
 
-[MIT](LICENSE) © Vincent Weevers
+[MIT](LICENSE)
