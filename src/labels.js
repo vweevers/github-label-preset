@@ -93,6 +93,11 @@ const groups = {
         description: 'Extra attention is needed'
       },
       {
+        name: 'pull request welcome',
+        aliases: ['status: pull request welcome', 'pr-welcome', 'pr welcome'],
+        description: 'A pull request is welcome'
+      },
+      {
         name: 'more information needed',
         aliases: [],
         description: 'Further information is requested'

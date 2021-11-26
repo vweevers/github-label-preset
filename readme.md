@@ -17,7 +17,9 @@
 
 ![semver-semver-major](svg/semver-semver-major.svg) ![semver-semver-minor](svg/semver-semver-minor.svg) ![semver-semver-patch](svg/semver-semver-patch.svg)
 
-![help-wanted-good-first-issue](svg/help-wanted-good-first-issue.svg) ![help-wanted-help-wanted](svg/help-wanted-help-wanted.svg) ![help-wanted-more-information-needed](svg/help-wanted-more-information-needed.svg)
+![help-wanted-good-first-issue](svg/help-wanted-good-first-issue.svg) ![help-wanted-help-wanted](svg/help-wanted-help-wanted.svg) ![help-wanted-pull-request-welcome](svg/help-wanted-pull-request-welcome.svg)
+
+![help-wanted-more-information-needed](svg/help-wanted-more-information-needed.svg)
 
 ![documentation-documentation](svg/documentation-documentation.svg) ![documentation-upgrade-guide](svg/documentation-upgrade-guide.svg) ![documentation-changelog](svg/documentation-changelog.svg)
 

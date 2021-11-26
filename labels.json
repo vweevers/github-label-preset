@@ -117,6 +117,17 @@
     "invert": true
   },
   {
+    "name": "pull request welcome",
+    "aliases": [
+      "status: pull request welcome",
+      "pr-welcome",
+      "pr welcome"
+    ],
+    "description": "A pull request is welcome",
+    "color": "8e57e4",
+    "invert": true
+  },
+  {
     "name": "more information needed",
     "aliases": [],
     "description": "Further information is requested",
